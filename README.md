@@ -28,7 +28,8 @@ You can download it from: https://golang.org/dl/
 ```bash
 git clone https://github.com/JOY-XII/BCS-DOS.git
 cd BCS-DOS
-go build teambcsdos.go
+chmod +x bcsdos
+./bcsdos
 ```
 
 ---
@@ -36,13 +37,13 @@ go build teambcsdos.go
 ## 🚀 Usage
 
 ```bash
-./teambcsdos -target <IP or URL> -port <port> -method <get|post> -threads <number>
+./bcsdos <url> <threads> <get/post> <seconds> <header.txt/nil>
 ```
 
 ### Example:
 
 ```bash
-./teambcsdos -target 192.168.1.100 -port 80 -method post -threads 1000
+./bcsdos https://xyz.com 15000 post 60 nil
 ```
 
 ---
